@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>{{ title }}</h2>
+    <form method="post">
+        <label for="nome">Nome do jogador
+            <input type="text" name="nome" placeholder="Ex: Giba" value="{{ jogador.nome}}" required/>
+        </label>
+        <label for="posicao">Posicao
+            <input type="text" name="posicao" placeholder="Ex: Central, Ponteiro" value="{{ jogador.posicao}}" required/>
+        </label>
+        <label for="altura">Altura do jogador
+            <input type="number" name="altura" placeholder="Altura em centímetros" value="{{ jogador.altura}}" required/>
+        </label>
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
